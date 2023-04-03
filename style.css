@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 15px auto;
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+    border: 1px solid #d1d3d4;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.type {
+    width: 213px;
+    min-height: 30px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    border: 2px solid #d1d3d4;
+    padding: 0 5px;
+}
+
+.focused {
+    outline: none;
+    border-color: #0d75ec;
+}
+
+.active {
+    text-decoration: line-through;
+    color: rgb(165, 164, 164);
+}
+
+.title {
+    min-width: 262px;
+    min-height: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 3px gray;
+    background-color: rgb(85, 85, 211);
+    border-radius: 3px;
+    border-bottom: 1px solid #d1d3d4;
+}
+
+.tasks {
+    width: 220px;
+    margin-top: 15px;
+}
+
+.task {
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.goal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid #d1d3d4;
+    padding: 5px 0 5px;
+    justify-content: space-between;
+}
+
+.checkbox {
+    cursor: pointer;
+    min-height: 25px;
+    min-width: 25px;
+}
+
+.del {
+    width: 10px;
+    height: 10px;
+    color: rgb(216, 26, 26);
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.del:hover {
+    color: rgb(248, 85, 85);
+}
